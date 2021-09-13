@@ -4,6 +4,7 @@ import { SignupComponent } from './signup/signup.component';
 import { SigninComponent } from './signin/signin.component';
 import { EventsComponent } from './events/events.component';
 import { AuthGuard } from './auth.guard';
+import { TodolistComponent } from './todolist/todolist.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,10 @@ const routes: Routes = [
     path: "events",
     component: EventsComponent,
     canActivate: [AuthGuard]
+  },
+  {
+    path: "todolist",
+    component: TodolistComponent,
   }
 ];
 

@@ -11,13 +11,15 @@ import { AuthService } from './auth.service';
 import { EventsComponent } from './events/events.component';
 import { AuthGuard } from './auth.guard';
 import { TokenInterceptorService } from './token-interceptor.service';
+import { TodolistComponent } from './todolist/todolist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignupComponent,
     SigninComponent,
-    EventsComponent
+    EventsComponent,
+    TodolistComponent
   ],
   imports: [
     BrowserModule,
