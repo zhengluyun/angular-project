@@ -1,34 +1,64 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "WindSong";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "WindSong";
 }
 
-body{
-    padding:10px;
-    background-color: pink;
+body {
+  padding: 10px;
+  background-color: pink;
 }
 
-.container{
-    margin: 10px;
-    padding: 20px;
-    width:100%;
+.container {
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
 }
 
-section{
-    margin: 30px;
-    display: flex;
-    justify-content: space-between;
+section {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
 }
 
-button{
-    width: 10%;
-    height: 15%;
-    padding: 10px;
+/* h5 {
+  position: relative;
+  display: inline-block;
 }
 
-li{
-    display: flex;
-    justify-content: space-between;
+h5::after {
+  position: absolute;
+  color: blue;
+  position: absolute;
+  width: 100%;
+  transform: scale(0, 1);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: 0 100%;
+  transition: transform 0.25s ease;
+  background: #ea0e4b;
+} */
+
+a:hover {
+  transform: scale(1, 1);
+  transform-origin: bottom left;
+  background-color: yellow;
+}
+
+content {
+  margin: 60px;
+}
+
+button {
+  width: 10%;
+  height: 15%;
+  padding: 10px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
 }
