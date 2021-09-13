@@ -6,10 +6,31 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./todolist.component.css']
 })
 export class TodolistComponent implements OnInit {
+  todolist = [
+    {
+      id:"1",
+      title:"task1",
+      isTask: true,
+      isOverdue: false,
+    },
+    {
+      id:"2",
+      title:"task2",
+      isTask: true,
+      isOverdue: true,
+    },
+    {
+      id:"3",
+      title:"the 3rd item",
+      isTask: false,
+      isOverdue: false,
+    }
+  ]
 
   constructor() { }
 
   ngOnInit(): void {
+    this.todolist = this.todolist;
   }
 
 }

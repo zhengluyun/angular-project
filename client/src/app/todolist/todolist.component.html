@@ -21,9 +21,9 @@
     </header>
     <content>
         <ul>
-            <li>
+            <li *ngFor="let todo of todolist">
                 <input type="checkbox">
-                <h6>title</h6>
+                <h6>{{todo.title}}</h6>
                 <button>button1</button>
                 <button>button2</button>
             </li>
