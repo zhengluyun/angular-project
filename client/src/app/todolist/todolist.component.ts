@@ -1,3 +1,4 @@
+import { rendererTypeName } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -28,9 +29,17 @@ export class TodolistComponent implements OnInit {
   ]
 
   constructor() { }
-
   ngOnInit(): void {
     this.todolist = this.todolist;
+  }
+  getColor1(isOverdue:any){
+    if (isOverdue) return "red";
+    else return "white";
+  }
+
+  getColor2(isOverdue:any){
+    if (!isOverdue) return "orange";
+    else return "white";
   }
 
 }

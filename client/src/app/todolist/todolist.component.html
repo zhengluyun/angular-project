@@ -24,8 +24,8 @@
             <li *ngFor="let todo of todolist">
                 <input type="checkbox">
                 <h6>{{todo.title}}</h6>
-                <button>button1</button>
-                <button>button2</button>
+                <button [ngStyle]="{'background-color':getColor1(todo.isOverdue)}"></button>
+                <button [ngStyle]="{'background-color':getColor2(todo.isOverdue)}"></button>
             </li>
         </ul>
     </content>
