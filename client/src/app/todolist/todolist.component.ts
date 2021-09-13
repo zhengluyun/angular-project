@@ -22,7 +22,7 @@ export class TodolistComponent implements OnInit {
     },
     {
       id:"3",
-      title:"the 3rd item",
+      title:"item3",
       isTask: false,
       isOverdue: false,
     }

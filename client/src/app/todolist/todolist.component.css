@@ -2,10 +2,33 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "WindSong";
+}
+
+body{
+    padding:10px;
+    background-color: pink;
+}
+
+.container{
+    margin: 10px;
+    padding: 20px;
+    width:100%;
+}
+
+section{
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
 }
 
 button{
     width: 10%;
     height: 15%;
     padding: 10px;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
 }
