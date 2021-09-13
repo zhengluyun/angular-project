@@ -36,10 +36,25 @@ export class TodolistComponent implements OnInit {
     if (isOverdue) return "red";
     else return "white";
   }
-
   getColor2(isOverdue:any){
     if (!isOverdue) return "orange";
     else return "white";
   }
-
+  countOverdue(){
+    var count = 0;
+    for (let todo of this.todolist){
+      if(todo.isOverdue === true)  count += 1;
+    }
+    return count;
+  }
+  countDuesoon(){
+    var count = 0;
+    for (let todo of this.todolist){
+      if(todo.isOverdue === false)  count += 1;
+    }
+    return count;
+  }
+  countAlltasks(){
+    return this.todolist.length;
+  }
 }
